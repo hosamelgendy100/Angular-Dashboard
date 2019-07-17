@@ -86,10 +86,15 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.min.js",
+              "../NGSIGHT/node_modules/alertifyjs/build/alertify.min.js"
+            ]
           }
         },
         "lint": {
