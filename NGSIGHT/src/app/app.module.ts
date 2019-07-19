@@ -15,6 +15,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ChartsModule } from 'ng2-charts';
+import { MomentModule } from 'ngx-moment';
 
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,6 +27,7 @@ import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { ServerComponent } from './server/server.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 
 
@@ -33,7 +35,7 @@ import { ServerComponent } from './server/server.component';
   declarations: [
     AppComponent, NavbarComponent, SidebarComponent, SectionHealthComponent,
     SectionOrdersComponent, SectionSalesComponent, PieChartComponent,
-    BarChartComponent, LineChartComponent, ServerComponent
+    BarChartComponent, LineChartComponent, ServerComponent, PaginationComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,7 @@ import { ServerComponent } from './server/server.component';
     AngularFirestoreModule, AngularFireAuthModule, AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserAnimationsModule, ToastrModule.forRoot(), AngularFireDatabaseModule,
-    ChartsModule
+    ChartsModule, MomentModule
   ],
   providers: [AlertifyService],
   bootstrap: [AppComponent]

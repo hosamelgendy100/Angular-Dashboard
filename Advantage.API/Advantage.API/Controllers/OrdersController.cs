@@ -10,10 +10,7 @@ namespace Advantage.API.Controllers
     public class OrdersController : Controller 
     {
         private readonly ApiContext _context;
-        public OrdersController (ApiContext context) 
-        {
-            _context = context;
-        }
+        public OrdersController (ApiContext context) => _context = context;
 
 
         [HttpGet("{pageIndex:int}/{pageSize:int}")]
